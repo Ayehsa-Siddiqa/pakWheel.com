@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(242,243,243);
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-20{
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+.accordion-body .btn1{
+    top: 50%;
+    margin-top: -17px;
+    height: 34px;
+    width: 30px;
+    right: 0;
+    margin-right: 35px; 
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+}
+.accordion{
+     --bs-accordion-btn-bg:rgb(252,252,252);
+     --bs-accordion-active-bg:rgb(252,252,252);
+     --bs-accordion-btn-focus-box-shadow:none;
+}
+.accordion-button::after, .accordion-button:not(.collapsed):after{
+    content: "\f0d7";
+    font-family: FontAwesome;
+    background-image: none; 
+}
+
+/* ADD CAR FORM CSS START */
+.add-car{
+    width: 0%;
+    /* height: auto; */
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%); 
+    display: flex;
+    border-top: 20px groove blue;
+    border-bottom: 20px groove blue;
+    opacity: 0;
+    z-index: -1;
+    transition:0.5s ease-in-out;
+}
+#add-car.active{
+    opacity: 1;
+    z-index: 1;
+    width: 60%;
+
+}
+.add-car .fa-xmark{
+    top: -20px;
+    font-size: 30px;
+    color:white;
+    right:0; 
+    background-color: green;
+}
+
+.add-car .img-side{
+    width: 30%; 
+    background-color:#f2f2f2;
+    border-right: 5px groove blue;
+}
+.add-car .add-details{
+    width: 70%;  
+}
+.add-car .img-side .img-box{
+    width: 100%;
+    height: 50%; 
+}
+.add-car .img-side .img-box i{
+    font-size: 45px;
+    top: 30%;
+    left: 60%; 
+    cursor: pointer;
+}
+.add-car .img-side .img-box input{
+    width: 50px;
+    height: 60px; 
+    top: 30%;
+    left: 60%;
+    opacity: 0;
+}
+.all-images{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+ 
+.fix-img{
+    width: 40px;
+    height: 40px;
+    
+}
+.search:focus {
+    outline: none;
+} 
+
+#price-from, #price-to{
+    -webkit-appearance: none;
+}
+
+
+
+

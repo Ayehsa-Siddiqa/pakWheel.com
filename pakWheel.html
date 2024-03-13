@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="pakWheel.css"> 
+</head> 
+<body> 
+    <!-- project 1 -->
+    <div id="pakWheel">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Used Cars For Sale In Pakistan</h1>
+                </div>
+                <div class="col-12">
+                    <ul class="list-unstyled d-flex">
+                        <li class="mx-2">Home /</li>
+                        <li class="mx-2">Used Cars /</li>
+                        <li class="mx-2">Used Cars For Sale in Pakistan</li>
+                        <li class=" ms-auto">1 - 25 of 55550 Results</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="side-head  bg-primary text-white p-2">
+                        <h6 class="my-0">SHOW RESULTS BY</h6>
+                    </div>
+                    <!-- accordion -->
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-14" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#one">
+                                    SEARCH BY KEYWORD
+                                </button>
+                            </h2>
+                            <div id="one" class="accordion-collapse collapse show border-top">
+                                <div class="accordion-body position-relative">
+                                    <form class="d-flex" role="search py-5">
+                                        <input type="text" class="rounded-0 border py-1 px-2 search" id="search-car" placeholder="e.g. Honda in Lahore">
+                                        <button id="btn1" type="button" class="filters btn1 position-absolute btn btn-primary rounded-0">Go</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- based on city -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-14" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#two">
+                                    CITY
+                                </button>
+                            </h2>
+                            <div id="two" class="accordion-collapse collapse show border-top">
+                                <div class="accordion-body fs-12">
+                                    <form>
+                                        <div class="mb-1 form-check filters">
+                                            <input type="checkbox" class="form-check-input city" value="Faislabad">
+                                            <label class="form-check-label">Faislabad</label>
+                                        </div>
+                                        <div class="mb-1 form-check filters"> 
+                                            <label class="form-check-label"> Lahore</label>
+                                            <input type="checkbox" id="exampleCheck1" class="form-check-input city" value="Lahore">       
+                                        </div>
+                                        <div class="mb-1 form-check filters">
+                                            <input type="checkbox" class="form-check-input city" value="Ellahabad" >
+                                            <label class="form-check-label">Ellahabad</label>
+                                        </div>
+                                        <div class="mb-1 form-check filters">
+                                            <input type="checkbox" class="form-check-input city" value="Karachi">
+                                            <label class="form-check-label">Karachi</label>
+                                        </div>
+                                        <div class="mb-1 form-check filters"> 
+                                            <input type="checkbox" class="form-check-input city" value="Sialkot">
+                                            <label class="form-check-label">Sialkot</label>
+                                        </div>
+                                        <div class="mb-1 form-check filters">
+                                            <input type="checkbox" class="form-check-input city" value="Multan">
+                                            <label class="form-check-label">Multan</label>
+                                        </div>
+                                        <a href="#">more choices...</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- based on Make -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-14" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#three">
+                                    Make
+                                </button>
+                            </h2>
+                            <div id="three" class="accordion-collapse collapse show border-top">
+                                <div class="accordion-body fs-12">
+                                    <form>
+                                        <div class="mb-1 form-check filters">
+                                            <input type="checkbox" class="form-check-input car-name" value="Toyota">
+                                            <label class="form-check-label" for="exampleCheck1">Toyota</label>
+                                        </div>
+                                        <div class="mb-1 form-check filters"> 
+                                            <label class="form-check-label" for="exampleCheck1">Suzuki</label>
+                                            <input type="checkbox" id="exampleCheck1" class="form-check-input car-name" value="Suzuki">       
+                                        </div>
+                                        <div class="mb-1 form-check filters">
+                                            <input type="checkbox" class="form-check-input car-name" value="Honda" >
+                                            <label class="form-check-label" for="exampleCheck1">Honda</label>
+                                        </div>
+                                        <div class="mb-1 form-check filters">
+                                            <input type="checkbox" class="form-check-input car-name" value="Daihastu">
+                                            <label class="form-check-label" for="exampleCheck1">Daihastu</label>
+                                        </div>
+                                        <div class="mb-1 form-check filters"> 
+                                            <input type="checkbox" class="form-check-input car-name" value="Nissan">
+                                            <label class="form-check-label" for="exampleCheck1">Nissan</label>
+                                        </div> 
+                                        <a href="#">more choices...</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- based on Province -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-14" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#four">
+                                     PROVINCE
+                                </button>
+                            </h2>
+                            <div id="four" class="accordion-collapse collapse show border-top">
+                                <div class="accordion-body fs-12">
+                                    <form>
+                                        <div class="mb-1 form-check filters">
+                                            <input type="checkbox" class="form-check-input slct-province" value="Punjab">
+                                            <label class="form-check-label">Punjab</label>
+                                        </div>
+                                        <div class="mb-1 form-check filters"> 
+                                            <label class="form-check-label">Sindh</label>
+                                            <input type="checkbox" class="form-check-input slct-province" value="Sindh">       
+                                        </div>
+                                        <div class="mb-1 form-check filters">
+                                            <input type="checkbox" class="form-check-input slct-province" value="KPK" >
+                                            <label class="form-check-label">KPK</label>
+                                        </div>
+                                        <div class="mb-1 form-check filters">
+                                            <input type="checkbox" class="form-check-input slct-province" value="Balochistan">
+                                            <label class="form-check-label">Balochistan</label>
+                                        </div>
+                                        <div class="mb-1 form-check filters"> 
+                                            <input type="checkbox" class="form-check-input slct-province" value="AzadKashmir">
+                                            <label class="form-check-label">AzadKashmir</label>
+                                        </div> 
+                                        <a href="#">more choices...</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- based on price range -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-14" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#five">
+                                     PRICE RANGE
+                                </button>
+                            </h2>
+                            <div id="five" class="accordion-collapse collapse show border-top">
+                                <div class="accordion-body position-relative">
+                                    <form class="d-flex" role="search py-5"> 
+                                        <select class="px-3 py-1" id="price-from"> 
+                                            <option selected> From</option> 
+                                            <option value="100000">100000</option>
+                                            <option value="200000">200000</option>
+                                            <option value="300000">300000</option>
+                                            <option value="400000">400000</option>
+                                            <option value="500000">500000</option>
+                                            <option value="600000">600000</option>
+                                            <option value="700000">700000</option>
+                                        </select> 
+                                        <select  class="px-3 py-1" id="price-to">
+                                            <option selected>To</option> 
+                                            <option value="1000000">1000000</option>
+                                            <option value="2000000">2000000</option>
+                                            <option value="2500000">2500000</option>
+                                            <option value="3000000">3000000</option>
+                                            <option value="3500000">3500000</option>
+                                            <option value="4000000">4000000</option>
+                                            <option value="4500000">4500000</option>
+                                            <option value="5000000">5000000</option>
+                                        </select>
+                                        <button type="button" id="btnn1" class="filters btn1 position-absolute btn btn-primary rounded-0">Go</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="head border py-2 pe-3 bg-white">
+                        <div class="row">
+                            <div class="col-5">
+                                <input type="text" class="ms-3 px-2 py-1" placeholder="Live Search" id="live" oninput="liveSearch()">
+                            </div>
+                            <div class="col-7 fs-12 text-end align-self-center">
+                                <button id="delete-btn" class="border-1 border-light"><i
+                                        class="fa-solid fa-list px-2"></i>&nbsp;
+                                    DELETE ALL LIST
+                                </button>
+                                <button id="add-btn" class="border-1 border-light"><i class="fa-brands fa-windows px-2"></i>&nbsp;
+                                    ADD CAR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- car detail -->
+                    <div id="car-list">    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- ADD CAR FORM -->
+    <div id="add-car" class="add-car">
+        <i id="close-btn" class="fa-solid fa-xmark position-absolute"></i>
+        <div class="img-side">
+            <div class="img-box d-flex position-relative p-4">
+                <div id="all-images" class="all-images rounded-2 position-relative"></div>
+                <i class="fa-solid fa-plus position-absolute"></i>
+                <input type="file" id="image-file" onchange="addimage(this)" class="position-absolute">
+            </div> 
+        </div>
+        <div class="add-details px-5">
+            <h4 class=" pt-1 my-0 text-primary">ADD NEW CAR </h4>
+            <form class="pt-3" id="clear-form">
+                <select class="form-select mb-2" id="name">
+                    <option value="" selected>Select Make</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Daihastu">Daihastu</option>
+                    <option value="Nissan">Nissan</option>
+                </select>
+                <input type="number" id="price" placeholder="Enter Car Price" class="form-control mb-2">            
+                <select class="form-select mb-2" id="province">
+                    <option selected>Select Province</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Sindh">Sindh</option>
+                    <option value="KPK">KPK</option>
+                    <option value="Balochistan">Balochistan</option>
+                    <option value="AzadKashmir">AzadKashmir</option>   
+                </select>
+                <select class="form-select mb-2" id="location">
+                    <option selected>Select city</option> 
+                    <option value="Faislabad">Faislabad</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Multan">Multan</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Ellahabad">Ellahabad</option>
+                    <option value="Sialkot">Sialkot</option>   
+                </select>
+                <input type="number" id="modal" placeholder="Enter Modal" class="form-control mb-2">        
+                <input type="text" id="speed" placeholder="Enter Speed" class="form-control mb-2">
+                <input type="text" id="car-cc" placeholder="Enter Car CC" class="form-control mb-2">
+                <select class="form-select mb-2" id="car-type">
+                    <option value="manual" selected>Manual</option>
+                    <option value="Automatic">Automatic</option>
+                </select>
+                <select class="form-select mb-2" id="engin-type">
+                    <option value="Petrol" selected>Petrol</option>
+                    <option value="Hybrid">Hybrid</option>
+                </select>
+                <button class="btn btn-primary mb-3" id="hideAddBtn" type="button" onclick="add()">ADD</button>
+                <button id="update" onclick="update_record()" type="button" class="btn btn-primary mb-3">UPDATE</button>
+            </form>
+        </div>
+    </div> 
+    <script src="pakWheel.js"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
